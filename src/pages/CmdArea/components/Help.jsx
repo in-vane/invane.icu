@@ -17,8 +17,6 @@ const Help = () => {
 			<br />
 			help
 			<br />
-			exit
-			<br />
 			<br />
 			Besides, there are some hidden commands, try to find them!
 		</div>

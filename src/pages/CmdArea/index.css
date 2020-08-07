@@ -1,0 +1,52 @@
+.command {
+  font-family: Cutive Mono, Courier New, Consolas, monospace;
+  font-size: 17px;
+  color: var(--main-color);
+  padding: 8px;
+  cursor: text;
+  overflow: auto;
+}
+
+.command ::selection {
+  background-color: var(--main-bg-color-selection);
+  color: var(--main-color-selection);
+}
+
+.main {
+  line-height: 24px;
+  word-wrap: break-word;
+}
+
+.main pre {
+  margin: 0;
+  font-family: Cutive Mono, Courier New, Consolas, monospace;
+}
+
+.main a {
+  color: var(--main-color);
+}
+
+.main a:hover {
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.input {
+  line-height: 24px;
+  background-color: transparent;
+  border: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: Cutive Mono, Courier New, Consolas, monospace;
+  color: var(--main-color);
+  width: auto;
+  word-break: break-all;
+  overflow-wrap: break-word;
+}
+
+.ls-folder {
+  color: var(--main-folder-color);
+}
