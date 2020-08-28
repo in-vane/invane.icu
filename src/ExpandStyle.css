@@ -1,3 +1,10 @@
+.left {
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  display: flex;
+}
+
 .command {
   height: 62%;
 }
@@ -76,12 +83,10 @@ body {
 }
 
 .left {
-  height: 100%;
-  flex-direction: column;
-  justify-content: space-between;
-  display: flex;
   box-sizing: border-box;
   width: 30%;
+  transform-origin: left;
+  transform: rotateY(8deg);
 }
 
 .right {
@@ -104,11 +109,6 @@ body {
   box-sizing: border-box;
   height: 100%;
   word-wrap: break-word;
-}
-
-.left {
-  transform-origin: left;
-  transform: rotateY(8deg);
 }
 
 .right {

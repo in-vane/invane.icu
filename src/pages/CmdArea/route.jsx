@@ -1,6 +1,7 @@
-import { profile, docker } from './articles';
+import { profile, docker } from '../../assets/articles/tech';
+import { ethics } from '../../assets/articles/rest';
 
-export const DIRECTORY = {
+export const ROUTE = {
   '/': {
     type: 'folder',
     children: {
@@ -14,12 +15,14 @@ export const DIRECTORY = {
       blog: {
         type: 'folder',
         children: {
-          'Docker下的前端静态部署.md': { type: 'file', ctx: docker },
+          'Extract_1.md': { type: 'file', ctx: ethics },
         },
       },
       projects: {
         type: 'folder',
-        children: {},
+        children: {
+          'Docker_Deploy_Frontend.md': { type: 'file', ctx: docker },
+        },
       },
     },
   },

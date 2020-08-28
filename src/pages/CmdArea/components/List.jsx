@@ -11,7 +11,7 @@ const List = (props) => {
     for (let node of refLs.current.children) {
       widths.push(node.clientWidth);
     }
-    const maxWidth = Math.max(...widths) + 16;
+    const maxWidth = Math.max(...widths) + 24;
     handleWidth(maxWidth);
   }, []);
 
@@ -23,10 +23,7 @@ const List = (props) => {
           <span
             className={`ls-${directory[key].type}`}
             key={getKey()}
-            style={{
-              display: 'inline-block',
-              width: width || 'auto',
-            }}
+            style={{ display: 'inline-block', width: width || 'auto' }}
           >
             {key}
           </span>

@@ -10,8 +10,8 @@ import {
   NoSuchFileOrDirectory,
   AccessDenied,
 } from './components';
-import { welcome } from './articles';
-import { DIRECTORY } from './directory';
+import { welcome } from '../../assets/articles/tech';
+import { ROUTE } from './route';
 
 const CmdArea = (props) => {
   const [position, handlePosition] = useState(['~']);
@@ -127,6 +127,8 @@ const CmdArea = (props) => {
         ]);
         refIpt.current.textContent = '';
         break;
+      case 'music':
+        break;
 
       default:
         handleDOMs((pre) => [
@@ -183,7 +185,7 @@ const CmdArea = (props) => {
   const getDir = () => {
     const deep = position.length - 1;
     let pt = 0;
-    let dir = DIRECTORY[position[pt]].children;
+    let dir = ROUTE[position[pt]].children;
     while (pt < deep) {
       pt = pt + 1;
       dir = dir[position[pt]].children || [];

@@ -1,4 +1,12 @@
-export const style = `.command {
+export const style = `
+.left {
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  display: flex;
+}
+
+.command {
   height: 62%;
 }
 
@@ -19,6 +27,10 @@ export const style = `.command {
 
 body {
   background: var(--main-color);
+}
+
+.App {
+  padding: 16px;
 }
 
 .style,
@@ -49,7 +61,7 @@ body {
 }
 
 .value {
-  color: #cf9518;
+  color: #be84f2;
   text-shadow: 0px 0px 4px;
 }
 
@@ -72,15 +84,10 @@ body {
 }
 
 .left {
-  height: 100%;
-  flex-direction: column;
-  justify-content: space-between;
-  display: flex;
   box-sizing: border-box;
-}
-
-.left {
   width: 30%;
+  transform-origin: left;
+  transform: rotateY(8deg);
 }
 
 .right {
@@ -103,11 +110,6 @@ body {
   box-sizing: border-box;
   height: 100%;
   word-wrap: break-word;
-}
-
-.left {
-  transform-origin: left;
-  transform: rotateY(8deg);
 }
 
 .right {
